@@ -1,0 +1,58 @@
+<h4>Quick Edit</h4>
+<br />
+<form action="#" method="post" class="quickform">
+	<div class="one_half">
+        <p>
+            <label for="title">Title</label>
+            <input type="text" name="title" />
+        </p>
+        <p>
+            <label for="slug">Slug</label>
+            <input type="text" name="slug" />
+        </p>
+        <p>
+            <label for="date">Date</label>
+            <span class="monthselect">
+                <select name="date" class="quickedit-date">
+                  <option value="Jan">Jan</option>
+                  <option value="Feb">Feb</option>
+                  <option value="Mar">Mar</option>
+                  <option value="Apr">Apr</option>
+                  <option value="May">May</option>
+                  <option value="Jun">Jun</option>
+                  <option value="Jul">Jul</option>
+                  <option value="Aug">Aug</option>
+                  <option value="Sept">Sept</option>
+                  <option value="Oct">Oct</option>
+                  <option value="Nov">Nov</option>
+                  <option value="Dec">Dec</option>
+                </select>
+            </span><!--monthselect-->
+            <input type="text" name="date" value="01" class="xsmall" />&nbsp;
+            <input type="text" name="year" value="2012" class="small" />
+        </p>
+        
+    </div><!-- one_half -->
+    
+    <div class="one_half last">
+    	<p>
+        	<label>Tags</label>
+            <textarea name="tags"  cols="" rows=""></textarea>
+        </p>
+        <p>
+        	<label>Status</label>
+            <span>
+                <input type="radio" name="status" value="published" /> Published &nbsp; 
+                <input type="radio" name="status" value="draft" /> Draft
+            </span>
+        </p>
+    </div><!-- one_half last -->
+    
+    <br clear="all" />
+    
+    <div class="quickformbutton">
+    	<button class="update">Update</button>
+        <button class="cancel">Cancel</button>
+        <span class="loading"><img src="../../images/loaders/loader3.gif" alt="" />Updating changes...</span>
+    </div><!-- button -->
+</form>
